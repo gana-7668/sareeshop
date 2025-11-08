@@ -22,7 +22,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Sarees', href: '/products' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '#' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
