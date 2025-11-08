@@ -52,13 +52,13 @@ ${allSarees}
 Use the following information to make your recommendations:
 
 1.  **User Profile**: This is the most important factor. Analyze their past purchases, color/fabric preferences, and budget.
-    {{userProfile}}
+    {{{userProfile}}}
 
 2.  **Trending Items**: Consider what is currently popular.
-    {{#if trendingItems}}Trending Items: {{trendingItems}}{{/if}}
+    {{#if trendingItems}}Trending Items: {{{trendingItems}}}{{/if}}
 
 3.  **Social Media Trends**: Consider what styles are being shared on social media.
-    {{#if socialMediaTrends}}Social Media Trends: {{socialMediaTrends}}{{/if}}
+    {{#if socialMediaTrends}}Social Media Trends: {{{socialMediaTrends}}}{{/if}}
 
 Based on all this information, analyze the user's profile and decide which 5 sarees from the "Available Sarees" list would be the best fit for them. Return only the names of the 5 recommended sarees.`,
 });
