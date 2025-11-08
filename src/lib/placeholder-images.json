@@ -121,6 +121,126 @@
       "imageHint": "chanderi saree"
     },
     {
+      "id": "saree-21",
+      "description": "Authentic Pochampally Ikat Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1729203510899-1b56999282e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb2NoYW1wYWxseSUyMHNhcmVlfGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pochampally saree"
+    },
+    {
+      "id": "saree-22",
+      "description": "Light Blue Kota Doria Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1698677537429-24570df912f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxrb3RhJTIwZG9yaWF8ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kota doria"
+    },
+    {
+      "id": "saree-23",
+      "description": "Vibrant Orange Bandhani Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1667880271916-069ccc2cbe01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b3JhbmdlJTIwYmFuZGhhbml8ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "orange bandhani"
+    },
+    {
+      "id": "saree-24",
+      "description": "Classic White and Red Tant Saree",
+      "imageUrl": "https://picsum.photos/seed/saree24/600/800",
+      "imageHint": "tant saree"
+    },
+    {
+      "id": "saree-25",
+      "description": "Royal Mysore Silk Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1713328471111-4e4a89a29a80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxteXNvcmUlMjBzaWxrfGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mysore silk"
+    },
+    {
+      "id": "saree-26",
+      "description": "Teal Blue Chanderi Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1646979201201-d5d123633854?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGFuZGVyaSUyMHNhcmVlfGVufDB8fHx8MTc2MjU5MjU2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chanderi saree"
+    },
+    {
+      "id": "saree-27",
+      "description": "Crimson Red Georgette Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1621083309107-ceadd3a38026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZWQlMjBnZW9yZ2V0dGV8ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "red georgette"
+    },
+    {
+      "id": "saree-28",
+      "description": "Sunshine Yellow Cotton Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1605871665507-46679ed05528?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8eWVsbG93JTIwY290dG9ufGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yellow cotton"
+    },
+    {
+      "id": "saree-29",
+      "description": "Midnight Blue Kanjivaram",
+      "imageUrl": "https://images.unsplash.com/photo-1737949944866-d640a34e7c10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxibHVlJTIwa2Fuaml2YXJhbXxlbnwwfHx8fDE3NjI1OTI4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue kanjivaram"
+    },
+    {
+      "id": "saree-30",
+      "description": "Lavender Organza Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1604148390744-de117e9cedce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXZlbmRlciUyMG9yZ2FuemF8ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lavender organza"
+    },
+    {
+      "id": "saree-31",
+      "description": "Wine Red Velvet Saree",
+      "imageUrl": "https://picsum.photos/seed/saree31/600/800",
+      "imageHint": "velvet saree"
+    },
+    {
+      "id": "saree-32",
+      "description": "Black Shimmer Chiffon Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1745943786751-f3562bf983b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxibGFjayUyMGNoaWZmb258ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "black chiffon"
+    },
+    {
+      "id": "saree-33",
+      "description": "Forest Green Linen Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1721240192984-746406953b6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmVlbiUyMGxpbmVufGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green linen"
+    },
+    {
+      "id": "saree-34",
+      "description": "Royal Green Paithani Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1735891969974-70b783786b82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFpdGhhbmklMjBzYXJlZXxlbnwwfHx8fDE3NjI1OTI4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paithani saree"
+    },
+    {
+      "id": "saree-35",
+      "description": "Beige and Gold Kerala Kasavu Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1740478870995-43b6e78ecf91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8a2FzYXZ1JTIwc2FyZWV8ZW58MHx8fHwxNzYyNTkyODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kasavu saree"
+    },
+    {
+      "id": "saree-36",
+      "description": "Fuchsia Pink Banarasi Silk Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1572288859556-0aa1c148f201?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwaW5rJTIwYmFuYXJhc2l8ZW58MHx8fHwxNzYyNTkyODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pink banarasi"
+    },
+    {
+      "id": "saree-37",
+      "description": "Indigo Blue Ajrakh Print Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1527239441953-caffd968d952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhanJha2glMjBwcmludHxlbnwwfHx8fDE3NjI1OTI4ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ajrakh print"
+    },
+    {
+      "id": "saree-38",
+      "description": "Turquoise Blue Silk Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1652111866883-2f1386db6a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0dXJxdW9pc2UlMjBzaWxrfGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "turquoise silk"
+    },
+    {
+      "id": "saree-39",
+      "description": "Charcoal Grey Tussar Silk Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1737034165726-7d20a00a1501?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmV5JTIwdHVzc2FyfGVufDB8fHx8MTc2MjU5Mjg4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grey tussar"
+    },
+    {
+      "id": "saree-40",
+      "description": "Multicolor Digital Print Organza Saree",
+      "imageUrl": "https://images.unsplash.com/photo-1688413708965-d4a7d3b0cc90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaWdpdGFsJTIwcHJpbnR8ZW58MHx8fHwxNzYyNTkyODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital print"
+    },
+    {
       "id": "hero-banner",
       "description": "Woman in a beautiful saree for the hero banner.",
       "imageUrl": "https://images.unsplash.com/photo-1609748340878-c690e3e4706b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYXJlZSUyMG1vZGVsfGVufDB8fHx8MTc2MjU0NjYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
