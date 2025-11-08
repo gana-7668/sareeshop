@@ -2,7 +2,7 @@ import { products } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Star, ShoppingCart, Heart } from "lucide-react";
+import { Star, ShoppingCart, Heart, Info, Sparkles } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import ProductCard from "@/components/product-card";
 
@@ -47,10 +47,10 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <Heart className="mr-2 h-5 w-5" /> Add to Favorites
             </Button>
           </div>
-          <div className="mt-6 space-y-2 text-sm">
-            <p><span className="font-semibold">Category:</span> <span className="text-primary">{product.category}</span></p>
-            <p><span className="font-semibold">Fabric:</span> {product.fabric}</p>
-            <p><span className="font-semibold">Color:</span> {product.color}</p>
+          <div className="mt-8 space-y-4 text-sm bg-primary/5 p-4 rounded-lg">
+            <p><Info className="inline-block mr-2 h-4 w-4 text-primary" /> <span className="font-semibold">Category:</span> <span className="text-primary">{product.category}</span>, <span className="font-semibold">Fabric:</span> {product.fabric}, <span className="font-semibold">Color:</span> {product.color}</p>
+            <p><Sparkles className="inline-block mr-2 h-4 w-4 text-primary" /> <span className="font-semibold">Best for:</span> {product.occasion}</p>
+            <p><Info className="inline-block mr-2 h-4 w-4 text-primary" /> <span className="font-semibold">Care:</span> {product.careInstructions}</p>
           </div>
         </div>
       </div>

@@ -5,11 +5,12 @@ import { products, categories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ProductCard from '@/components/product-card';
 import AiRecommendations from '@/components/ai-recommendations';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Gem } from 'lucide-react';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-banner');
   const featuredProducts = products.slice(0, 4);
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-us-banner');
 
   return (
     <div>
@@ -83,8 +84,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Us Snippet Section */}
+      <section className="bg-primary/5">
+        <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <Gem className="h-10 w-10 text-primary mb-4" />
+              <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">The Art of the Saree</h2>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Saree Shop is a celebration of India's rich textile heritage. We travel the country to source the most beautiful, handcrafted sarees, connecting you with the art of our master weavers. Each piece in our collection tells a story of tradition, craftsmanship, and timeless elegance.
+              </p>
+              <Button asChild>
+                <Link href="/about">Learn More About Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              </Button>
+            </div>
+            <div className="order-1 md:order-2 aspect-square relative rounded-lg overflow-hidden shadow-lg">
+              {aboutImage && (
+                <Image
+                  src={aboutImage.imageUrl}
+                  alt={aboutImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={aboutImage.imageHint}
+                />
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* AI Recommendations Section */}
-      <section className="py-16 md:py-24 bg-primary/5">
+      <section className="py-16 md:py-24">
          <div className="container mx-auto px-4 md:px-6">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
             Just For You

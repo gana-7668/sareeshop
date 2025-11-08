@@ -11,56 +11,24 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
+import { products } from '@/lib/data';
 
 const SareeRecommendationsInputSchema = z.object({
   userProfile: z
     .string()
     .describe('The user profile, including purchase history and preferences.'),
-  trendingItems: z.string().optional().describe('Trending saree items.'),
-  socialMediaTrends: z.string().optional().describe('Saree trends on social media.'),
+  trendingItems: z.string().optional().describe('A summary of currently trending saree items.'),
+  socialMediaTrends: z.string().optional().describe('A summary of saree trends on social media.'),
 });
 export type SareeRecommendationsInput = z.infer<typeof SareeRecommendationsInputSchema>;
 
 const SareeRecommendationsOutputSchema = z.object({
   recommendations: z
     .array(z.string())
-    .describe('A list of saree recommendations based on the user profile.'),
+    .describe('A list of 5 recommended saree names from the available product list that best match the user profile and trends.'),
 });
 export type SareeRecommendationsOutput = z.infer<typeof SareeRecommendationsOutputSchema>;
 
-const incorporateTrendingItems = ai.defineTool({
-  name: 'incorporateTrendingItems',
-  description: 'Check trending saree items and optionally incorporate them into the recommendations.',
-  inputSchema: z.object({
-    shouldIncorporate: z
-      .boolean()
-      .describe('Whether to incorporate trending items into the recommendations.'),
-  }),
-  outputSchema: z.string(),
-}, async (input) => {
-  if (input.shouldIncorporate) {
-    // In a real application, this would fetch trending items from a database or API.
-    return 'Trending items incorporated.';
-  }
-  return 'Trending items not incorporated.';
-});
-
-const incorporateSocialMediaTrends = ai.defineTool({
-  name: 'incorporateSocialMediaTrends',
-  description: 'Check social media trends and optionally incorporate them into the recommendations.',
-  inputSchema: z.object({
-    shouldIncorporate: z
-      .boolean()
-      .describe('Whether to incorporate social media trends into the recommendations.'),
-  }),
-  outputSchema: z.string(),
-}, async (input) => {
-  if (input.shouldIncorporate) {
-    // In a real application, this would fetch social media trends from an API.
-    return 'Social media trends incorporated.';
-  }
-  return 'Social media trends not incorporated.';
-});
 
 export async function getSareeRecommendations(
   input: SareeRecommendationsInput
@@ -68,23 +36,31 @@ export async function getSareeRecommendations(
   return sareeRecommendationsFlow(input);
 }
 
+const allSarees = products.map(p => `'${p.name}' (${p.category}, ${p.color}, ${p.fabric})`).join('\n');
+
 const prompt = ai.definePrompt({
   name: 'sareeRecommendationsPrompt',
   input: {schema: SareeRecommendationsInputSchema},
   output: {schema: SareeRecommendationsOutputSchema},
-  tools: [incorporateTrendingItems, incorporateSocialMediaTrends],
-  prompt: `You are a personal saree recommendation assistant.
+  prompt: `You are a personal saree recommendation assistant for an online saree shop. Your goal is to provide 5 saree recommendations that a user is likely to purchase.
 
-Based on the user's profile and purchase history:
+You have access to the full list of available sarees. You must only recommend sarees from this list.
 
-{{userProfile}}
+Available Sarees:
+${allSarees}
 
-Recommend sarees that match their taste and preferences.
+Use the following information to make your recommendations:
 
-Decide whether to incorporate trending saree items and social media trends into the recommendations, using the appropriate tools if necessary.
+1.  **User Profile**: This is the most important factor. Analyze their past purchases, color/fabric preferences, and budget.
+    {{userProfile}}
 
-Trending Items: {{trendingItems}}
-Social Media Trends: {{socialMediaTrends}}`,
+2.  **Trending Items**: Consider what is currently popular.
+    {{#if trendingItems}}Trending Items: {{trendingItems}}{{/if}}
+
+3.  **Social Media Trends**: Consider what styles are being shared on social media.
+    {{#if socialMediaTrends}}Social Media Trends: {{socialMediaTrends}}{{/if}}
+
+Based on all this information, analyze the user's profile and decide which 5 sarees from the "Available Sarees" list would be the best fit for them. Return only the names of the 5 recommended sarees.`,
 });
 
 const sareeRecommendationsFlow = ai.defineFlow(

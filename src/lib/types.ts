@@ -10,6 +10,8 @@ export type Product = {
   fabric: string;
   rating: number;
   reviewCount: number;
+  occasion: string;
+  careInstructions: string;
 };
 
 export type CartItem = {

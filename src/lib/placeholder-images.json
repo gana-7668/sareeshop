@@ -41,6 +41,12 @@
       "description": "Woman in a beautiful saree for the hero banner.",
       "imageUrl": "https://images.unsplash.com/photo-1609748340878-c690e3e4706b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYXJlZSUyMG1vZGVsfGVufDB8fHx8MTc2MjU0NjYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "saree model"
+    },
+    {
+      "id": "about-us-banner",
+      "description": "An Indian weaver working at a loom.",
+      "imageUrl": "https://images.unsplash.com/photo-1620756246322-68f03f57233d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjB3ZWF2ZXJ8ZW58MHx8fHwxNzYyODg5MzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Indian weaver"
     }
   ]
 }

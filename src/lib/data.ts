@@ -16,6 +16,8 @@ export const products: Product[] = [
     fabric: 'Silk',
     rating: 4.8,
     reviewCount: 120,
+    occasion: 'Wedding, Festive',
+    careInstructions: 'Dry clean only.',
   },
   {
     id: '2',
@@ -29,6 +31,8 @@ export const products: Product[] = [
     fabric: 'Banarasi Silk',
     rating: 4.9,
     reviewCount: 95,
+    occasion: 'Wedding, Grand Events',
+    careInstructions: 'Dry clean only.',
   },
   {
     id: '3',
@@ -42,6 +46,8 @@ export const products: Product[] = [
     fabric: 'Chiffon',
     rating: 4.5,
     reviewCount: 78,
+    occasion: 'Daytime Event, Casual',
+    careInstructions: 'Gentle hand wash.',
   },
   {
     id: '4',
@@ -55,6 +61,8 @@ export const products: Product[] = [
     fabric: 'Kanjivaram Silk',
     rating: 5.0,
     reviewCount: 210,
+    occasion: 'Bridal, Temple Wear',
+    careInstructions: 'Dry clean only.',
   },
   {
     id: '5',
@@ -68,6 +76,8 @@ export const products: Product[] = [
     fabric: 'Cotton',
     rating: 4.6,
     reviewCount: 150,
+    occasion: 'Office, Casual Wear',
+    careInstructions: 'Hand wash separately in cold water.',
   },
   {
     id: '6',
@@ -81,6 +91,8 @@ export const products: Product[] = [
     fabric: 'Georgette',
     rating: 4.7,
     reviewCount: 88,
+    occasion: 'Party, Evening Wear',
+    careInstructions: 'Gentle hand wash.',
   },
 ];
 
