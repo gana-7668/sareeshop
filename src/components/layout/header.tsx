@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -12,9 +13,12 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { categories } from '@/lib/data';
+import { useCart } from '@/hooks/use-cart';
+import { Badge } from '@/components/ui/badge';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { cartCount } = useCart();
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-sm">
@@ -46,7 +50,10 @@ export default function Header() {
             </Button>
           </div>
           <Button variant="ghost" size="icon" asChild>
-            <Link href="/cart">
+            <Link href="/cart" className="relative">
+              {cartCount > 0 && (
+                 <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0">{cartCount}</Badge>
+              )}
               <ShoppingCart className="h-5 w-5" />
               <span className="sr-only">Shopping Cart</span>
             </Link>

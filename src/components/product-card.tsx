@@ -1,15 +1,19 @@
+
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Product } from '@/lib/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
+import { useCart } from '@/hooks/use-cart';
 
 type ProductCardProps = {
   product: Product;
 };
 
 export default function ProductCard({ product }: ProductCardProps) {
+  const { addToCart } = useCart();
   return (
     <Card className="overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group">
       <Link href={`/products/${product.id}`}>
@@ -39,7 +43,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0 flex justify-between items-center">
         <p className="text-lg font-bold text-primary">₹{product.price.toLocaleString()}</p>
-        <Button size="sm">Add to Cart</Button>
+        <Button size="sm" onClick={() => addToCart(product)}>Add to Cart</Button>
       </CardFooter>
     </Card>
   );

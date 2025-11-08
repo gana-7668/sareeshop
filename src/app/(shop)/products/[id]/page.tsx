@@ -1,3 +1,5 @@
+
+'use client';
 import { products } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -5,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import { Star, ShoppingCart, Heart, Info, Sparkles } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import ProductCard from "@/components/product-card";
+import { useCart } from "@/hooks/use-cart";
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
+  const { addToCart } = useCart();
   const product = products.find((p) => p.id === params.id);
   const relatedProducts = products.filter(p => p.id !== params.id && p.category === product?.category).slice(0, 4);
 
@@ -40,7 +44,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           <Separator className="my-6" />
           <p className="text-muted-foreground leading-relaxed">{product.description}</p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="flex-1">
+            <Button size="lg" className="flex-1" onClick={() => addToCart(product)}>
               <ShoppingCart className="mr-2 h-5 w-5" /> Add to Cart
             </Button>
             <Button size="lg" variant="outline" className="flex-1">
