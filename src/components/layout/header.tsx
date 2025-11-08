@@ -12,13 +12,18 @@ import {
   SheetHeader,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { categories } from '@/lib/data';
 import { useCart } from '@/hooks/use-cart';
 import { Badge } from '@/components/ui/badge';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { cartCount } = useCart();
+
+  const navLinks = [
+    { name: 'Sarees', href: '/products' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '#' },
+  ];
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur-sm">
@@ -31,13 +36,13 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          {categories.slice(1, 5).map((category) => (
+          {navLinks.map((link) => (
              <Link
-                key={category.name}
-                href={category.href}
+                key={link.name}
+                href={link.href}
                 className="text-sm font-medium transition-colors hover:text-primary"
               >
-                {category.name}
+                {link.name}
             </Link>
           ))}
         </nav>
@@ -87,14 +92,14 @@ export default function Header() {
                   </Button>
                 </div>
                 <nav className="flex flex-col gap-4 mt-4">
-                  {categories.map((category) => (
+                  {navLinks.map((link) => (
                      <Link
-                        key={category.name}
-                        href={category.href}
+                        key={link.name}
+                        href={link.href}
                         className="text-lg font-medium transition-colors hover:text-primary"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
-                        {category.name}
+                        {link.name}
                     </Link>
                   ))}
                 </nav>
