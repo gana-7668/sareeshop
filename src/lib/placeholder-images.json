@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "saree-1",
+      "description": "Elegant silk saree with intricate gold patterns.",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1551854716-8b811be39e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaWxrJTIwc2FyZWV8ZW58MHx8fHwxNzYyNTQ2NjE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "silk saree"
+    },
+    {
+      "id": "saree-2",
+      "description": "A beautiful Banarasi saree.",
+      "imageUrl": "https://images.unsplash.com/photo-1547702128-e8e44b310045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5hcmFzaSUyMHNhcmVlfGVufDB8fHx8MTc2MjQ5NjE2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "banarasi saree"
+    },
+    {
+      "id": "saree-3",
+      "description": "Lightweight chiffon saree perfect for summer.",
+      "imageUrl": "https://images.unsplash.com/photo-1695601187619-9b361fa6b6d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaGlmZm9uJTIwc2FyZWV8ZW58MHx8fHwxNzYyNTg5NTI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chiffon saree"
+    },
+    {
+      "id": "saree-4",
+      "description": "Vibrant Kanjivaram saree for weddings.",
+      "imageUrl": "https://images.unsplash.com/photo-1707344238562-bb94d79c5667?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxrYW5qaXZhcmFtJTIwc2FyZWV8ZW58MHx8fHwxNzYyNTg5NTI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kanjivaram saree"
+    },
+    {
+      "id": "saree-5",
+      "description": "Cotton saree for daily wear.",
+      "imageUrl": "https://images.unsplash.com/photo-1726013109765-4699c4257be5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb3R0b24lMjBzYXJlZXxlbnwwfHx8fDE3NjI1ODk1Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cotton saree"
+    },
+    {
+      "id": "saree-6",
+      "description": "Designer Georgette saree.",
+      "imageUrl": "https://images.unsplash.com/photo-1741891902800-93fbd647aad8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnZW9yZ2V0dGUlMjBzYXJlZXxlbnwwfHx8fDE3NjI1ODk1Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "georgette saree"
+    },
+    {
+      "id": "hero-banner",
+      "description": "Woman in a beautiful saree for the hero banner.",
+      "imageUrl": "https://images.unsplash.com/photo-1609748340878-c690e3e4706b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYXJlZSUyMG1vZGVsfGVufDB8fHx8MTc2MjU0NjYxOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "saree model"
+    }
+  ]
 }
