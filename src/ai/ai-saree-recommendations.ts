@@ -42,6 +42,7 @@ const prompt = ai.definePrompt({
   name: 'sareeRecommendationsPrompt',
   input: {schema: SareeRecommendationsInputSchema},
   output: {schema: SareeRecommendationsOutputSchema},
+  model: 'googleai/gemini-1.5-flash-latest',
   prompt: `You are a personal saree recommendation assistant for an online saree shop. Your goal is to provide 5 saree recommendations that a user is likely to purchase.
 
 You have access to the full list of available sarees. You must only recommend sarees from this list.
