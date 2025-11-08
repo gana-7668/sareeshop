@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { CartProvider } from '@/hooks/use-cart';
+import WhatsAppButton from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
   title: 'Saree Shop',
@@ -30,6 +31,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppButton phoneNumber="917262019320" />
           <Toaster />
         </CartProvider>
       </body>
