@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Gem, Facebook, Instagram, Twitter } from 'lucide-react';
 
@@ -17,13 +18,13 @@ export default function Footer() {
               Exquisite sarees for every occasion, celebrating tradition with a modern touch.
             </p>
             <div className="flex gap-4">
-              <Link href="#" aria-label="Facebook">
+              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Twitter">
+              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary" />
               </Link>
             </div>
@@ -41,16 +42,16 @@ export default function Footer() {
             <h3 className="font-headline text-lg font-semibold mb-4">About Us</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-sm hover:text-primary">Our Story</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary">Contact</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary">FAQs</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-primary">Contact</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-primary">FAQs</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-headline text-lg font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-sm hover:text-primary">Shipping & Returns</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-sm hover:text-primary">Terms of Service</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-primary">Shipping & Returns</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-primary">Privacy Policy</Link></li>
+              <li><Link href="/contact" className="text-sm hover:text-primary">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
