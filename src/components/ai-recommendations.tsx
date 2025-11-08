@@ -1,3 +1,4 @@
+
 'use client';
 
 import { products } from '@/lib/data';
@@ -22,6 +23,8 @@ export default function AiRecommendations() {
         const socialMediaTrends = "Pastel-colored organza sarees are popular among influencers for summer events.";
 
         const result = await getSareeRecommendations({ userProfile, trendingItems, socialMediaTrends });
+        
+        let finalProducts: Product[] = [];
 
         if (result.recommendations.length > 0) {
           const recommendedNames = result.recommendations.map(r => r.toLowerCase());
@@ -29,25 +32,26 @@ export default function AiRecommendations() {
             .filter(p => recommendedNames.some(name => p.name.toLowerCase().includes(name) || name.includes(p.name.toLowerCase())))
             .slice(0, 5); // Take up to 5 matches
 
-          // If not enough matches, fill with random products
-          if (filteredProducts.length < 5) {
-             const randomProducts = [...products]
-                .filter(p => !filteredProducts.some(fp => fp.id === p.id)) // Exclude already selected
-                .sort(() => 0.5 - Math.random())
-                .slice(0, 5 - filteredProducts.length);
-              setRecommendedProducts([...filteredProducts, ...randomProducts]);
-          } else {
-            setRecommendedProducts(filteredProducts);
-          }
-        } else {
-            // Fallback to random if AI returns no recommendations
-            setRecommendedProducts([...products].sort(() => 0.5 - Math.random()).slice(0, 5));
+          finalProducts = filteredProducts;
         }
+        
+        // If not enough matches or AI fails, fill with random products
+        if (finalProducts.length < 5) {
+            const existingIds = new Set(finalProducts.map(p => p.id));
+            const randomProducts = [...products]
+              .filter(p => !existingIds.has(p.id)) // Exclude already selected
+              .sort(() => 0.5 - Math.random())
+              .slice(0, 5 - finalProducts.length);
+            finalProducts = [...finalProducts, ...randomProducts];
+        }
+        
+        setRecommendedProducts(finalProducts);
 
       } catch (error) {
         console.error("Failed to fetch AI recommendations:", error);
         // Fallback to random products on error
-        setRecommendedProducts([...products].sort(() => 0.5 - Math.random()).slice(0, 5));
+        const randomProducts = [...products].sort(() => 0.5 - Math.random()).slice(0, 5);
+        setRecommendedProducts(randomProducts);
       } finally {
         setLoading(false);
       }
